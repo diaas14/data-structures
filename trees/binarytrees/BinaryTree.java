@@ -41,7 +41,7 @@ public class BinaryTree {
             root = insert(root, readVal);
             readVal = sc.nextInt();
         }
-        sc.close();
+        // sc.close();
         return root;
     }
 
@@ -50,6 +50,20 @@ public class BinaryTree {
         inorder(root.left);
         System.out.print(root.val + " ");
         inorder(root.right);
+    }
+
+    public static void preorder(TreeNode<Integer> root) {
+        if (root == null) return;
+        System.out.print(root.val + " ");
+        preorder(root.left);
+        preorder(root.right);
+    }
+
+    public static void postorder(TreeNode<Integer> root) {
+        if (root == null) return;
+        postorder(root.left);
+        postorder(root.right);
+        System.out.print(root.val + " ");
     }
 
     public static void main(String [] args) {
