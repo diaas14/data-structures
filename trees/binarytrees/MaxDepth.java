@@ -1,5 +1,10 @@
 package trees.binarytrees;
 
+/*
+ * Time Complexity - O(n)
+ * Space Complexity - O(n) (Worst case, Best case - O(log(n))) (Size of recursive call stack)
+ * n - number of nodes
+ */
 public class MaxDepth {
 
     // public static int max(int a, int b) {
