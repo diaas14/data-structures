@@ -1,4 +1,4 @@
-package trees.trie;
+package trees.tries;
 
 public class Trie {
     Trie [] next;
